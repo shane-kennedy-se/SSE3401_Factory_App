@@ -55,7 +55,8 @@ class _EngineerListPageState extends State<EngineerListPage> {
       appBar: AppBar(
         title: Center(
           child: Text(
-            selectedTitle, // Use the selectedTitle variable here
+            selectedTitle,
+            key: Key('topTitle'),// Use the selectedTitle variable here
             style: const TextStyle(
               color: Colors.black,
               fontFamily: 'Poppins',
@@ -66,6 +67,7 @@ class _EngineerListPageState extends State<EngineerListPage> {
         ),
         actions: <Widget>[
           IconButton(
+            key: Key('registrationPageIcon'),
             icon: const Icon(Icons.settings, color: Colors.blueGrey, size: 35.0),
             onPressed: () {
               Navigator.push(

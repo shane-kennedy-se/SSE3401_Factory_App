@@ -111,6 +111,7 @@ class _DashboardState extends State<Dashboard> {
                     const Spacer(),
                     Text(
                       title,
+                      key: Key('dashboardTitle'),
                       textAlign: TextAlign.center,
                       style: const TextStyle(
                         fontFamily: 'Poppins',
