@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99071194134",
+    "project_id": "sse3401-factory-app",
+    "storage_bucket": "sse3401-factory-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99071194134:android:1549451e1611a59e0ff137",
+        "android_client_info": {
+          "package_name": "com.example.lab_5_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfUkDRn7yOMV2V2-_aLYCwNmFAWx-u5_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
