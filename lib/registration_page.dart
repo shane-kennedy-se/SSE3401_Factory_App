@@ -131,42 +131,40 @@ class _RegistrationPageState extends State<RegistrationPage> {
                               const SizedBox(
                                 width: 40,
                               ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 0.0),
-                                    child: Container(
-                                      height: 60,
-                                      width: 250,
-                                      padding: const EdgeInsets.symmetric(horizontal: 10),
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        border: Border.all(color: Colors.black),
-                                        borderRadius: BorderRadius.circular(5),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.5, // Set width to 50% of the screen width
+                                child: Padding(
+                                  padding: const EdgeInsets.only(right: 0.0),
+                                  child: Container(
+                                    height: 60,
+                                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(color: Colors.black),
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
+                                    child: TextFormField(
+                                      decoration: const InputDecoration(
+                                        labelText: '',
+                                        contentPadding: EdgeInsets.symmetric(vertical: 22),
                                       ),
-                                      child: TextFormField(
-                                        decoration: const InputDecoration(
-                                          labelText: '',
-                                          contentPadding: EdgeInsets.symmetric(vertical: 22),
-                                        ),
-                                        keyboardType: TextInputType.phone,
-                                        textAlignVertical: TextAlignVertical.center,
-                                        style: const TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 20,
-                                        ),
-                                        validator: (value) {
-                                          if (value?.isEmpty ?? true) {
-                                            return 'Please enter your phone number';
-                                          }
-                                          return null;
-                                        },
-                                        onSaved: (value) => phoneNumber = value ?? '',
+                                      keyboardType: TextInputType.phone,
+                                      textAlignVertical: TextAlignVertical.center,
+                                      style: const TextStyle(
+                                        fontFamily: 'Poppins',
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 20,
                                       ),
+                                      validator: (value) {
+                                        if (value?.isEmpty ?? true) {
+                                          return 'Please enter your phone number';
+                                        }
+                                        return null;
+                                      },
+                                      onSaved: (value) => phoneNumber = value ?? '',
                                     ),
                                   ),
-                                ],
+                                ),
                               ),
                             ],
                           ),

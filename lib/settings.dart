@@ -89,30 +89,28 @@ class _SettingsState extends State<Settings> {
                     const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Padding(
-                          padding: EdgeInsets.only(left: 16.0),
-                          child: Align(
-                            alignment: Alignment.centerLeft,
-                            child: Text(
-                              'Maintenance Threshold',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 24,
+                        Expanded(
+                          child: Padding(
+                            padding: EdgeInsets.only(left: 16.0),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Text(
+                                'Maintenance Threshold',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
                               ),
                             ),
                           ),
                         ),
-                        Row(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(right: 50.0),
-                              child: Icon(
-                                Icons.info_outline,
-                                size: 30,
-                              ),
-                            ),
-                          ],
+                        Padding(
+                          padding: EdgeInsets.only(right: 50.0),
+                          child: Icon(
+                            Icons.info_outline,
+                            size: 30,
+                          ),
                         ),
                       ],
                     ),

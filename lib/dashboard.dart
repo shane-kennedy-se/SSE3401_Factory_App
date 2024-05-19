@@ -180,34 +180,25 @@ class _DashboardState extends State<Dashboard> {
                                         height: 20,
                                       ),
                                       Row(
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          Gauge(
-                                            value: currentButtonData?.gaugeValues[0]
-                                                .toDouble() ??
-                                                0.0,
-                                            mainText: (currentButtonData
-                                                ?.gaugeValues[0]
-                                                .toDouble() ??
-                                                0.0)
-                                                .toStringAsFixed(1),
-                                            topAnnotation: 'Steam Pressure',
-                                            superScript: 'bar',
-                                            colorIndex: 1,
+                                          Expanded(
+                                            child: Gauge(
+                                              value: currentButtonData?.gaugeValues[0].toDouble() ?? 0.0,
+                                              mainText: (currentButtonData?.gaugeValues[0].toDouble() ?? 0.0).toStringAsFixed(1),
+                                              topAnnotation: 'Steam Pressure',
+                                              superScript: 'bar',
+                                              colorIndex: 1,
+                                            ),
                                           ),
-                                          Gauge(
-                                            value: currentButtonData?.gaugeValues[1]
-                                                .toDouble() ??
-                                                0.0,
-                                            mainText: (currentButtonData
-                                                ?.gaugeValues[1]
-                                                .toDouble() ??
-                                                0.0)
-                                                .toStringAsFixed(1),
-                                            topAnnotation: 'Steam Flow',
-                                            superScript: 'T/H',
-                                            colorIndex: 0,
+                                          Expanded(
+                                            child: Gauge(
+                                              value: currentButtonData?.gaugeValues[1].toDouble() ?? 0.0,
+                                              mainText: (currentButtonData?.gaugeValues[1].toDouble() ?? 0.0).toStringAsFixed(1),
+                                              topAnnotation: 'Steam Flow',
+                                              superScript: 'T/H',
+                                              colorIndex: 0,
+                                            ),
                                           ),
                                         ],
                                       ),
@@ -215,35 +206,26 @@ class _DashboardState extends State<Dashboard> {
                                         height: 20,
                                       ),
                                       Row(
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.spaceEvenly,
+                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                          Gauge(
-                                            value: currentButtonData?.gaugeValues[2]
-                                                .toDouble() ??
-                                                0.0,
-                                            mainText: (currentButtonData
-                                                ?.gaugeValues[2]
-                                                .toDouble() ??
-                                                0.0)
-                                                .toStringAsFixed(1),
-                                            topAnnotation: 'Water Level',
-                                            superScript: '%',
-                                            colorIndex: 1,
+                                          Expanded(
+                                            child: Gauge(
+                                              value: currentButtonData?.gaugeValues[2].toDouble() ?? 0.0,
+                                              mainText: (currentButtonData?.gaugeValues[2].toDouble() ?? 0.0).toStringAsFixed(1),
+                                              topAnnotation: 'Water Level',
+                                              superScript: '%',
+                                              colorIndex: 1,
+                                            ),
                                           ),
-                                          Gauge(
-                                            value: currentButtonData?.gaugeValues[3]
-                                                .toDouble() ??
-                                                0.0,
-                                            mainText: (currentButtonData
-                                                ?.gaugeValues[3]
-                                                .toDouble() ??
-                                                0.0)
-                                                .toStringAsFixed(1),
-                                            topAnnotation: 'Power Frequency',
-                                            superScript: 'Hz',
-                                            colorIndex: 1,
-                                          )
+                                          Expanded(
+                                            child: Gauge(
+                                              value: currentButtonData?.gaugeValues[3].toDouble() ?? 0.0,
+                                              mainText: (currentButtonData?.gaugeValues[3].toDouble() ?? 0.0).toStringAsFixed(1),
+                                              topAnnotation: 'Power Frequency',
+                                              superScript: 'Hz',
+                                              colorIndex: 1,
+                                            ),
+                                          ),
                                         ],
                                       ),
                                       const SizedBox(

@@ -137,7 +137,6 @@ class _InvitationPageState extends State<InvitationPage> {
 
                     Row(
                       children: [
-
                         Padding(
                           padding: const EdgeInsets.only(left: 28.0),
                           child: Image.asset(
@@ -156,40 +155,36 @@ class _InvitationPageState extends State<InvitationPage> {
                         const SizedBox(
                           width: 40,
                         ),
-                        Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 0.0),
-                              child: Container(
-                                height: 60,
-                                width: 250,
-                                padding: const EdgeInsets.symmetric(horizontal: 10),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  border: Border.all(color: Colors.black),
-                                  borderRadius: BorderRadius.circular(5),
-                                ),
-                                child: TextFormField(
-                                  decoration: const InputDecoration(
-                                    labelText: 'Enter your phone number.',
-                                    labelStyle: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontSize: 20,
-                                    ),
-                                    hintText: '',
-                                  ),
-                                  keyboardType: TextInputType.phone,
-                                  style: const TextStyle(
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(right: 0.0),
+                            child: Container(
+                              height: 60,
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: Border.all(color: Colors.black),
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: TextFormField(
+                                decoration: const InputDecoration(
+                                  labelText: 'Enter your phone number.',
+                                  labelStyle: TextStyle(
                                     fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.normal,
                                     fontSize: 20,
                                   ),
-
-                                  onSaved: (value) => phoneNumber = value ?? '',
+                                  hintText: '',
                                 ),
+                                keyboardType: TextInputType.phone,
+                                style: const TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 20,
+                                ),
+                                onSaved: (value) => phoneNumber = value ?? '',
                               ),
                             ),
-                          ],
+                          ),
                         ),
                       ],
                     ),
