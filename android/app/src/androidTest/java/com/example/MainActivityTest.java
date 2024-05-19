@@ -1,4 +1,4 @@
-package com.example.factory_apps;
+package com.example.lab_5_2;
 
 import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;
