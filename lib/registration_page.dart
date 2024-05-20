@@ -202,6 +202,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                           Padding(
                             padding: const EdgeInsets.only(bottom: 40.0),
                             child: ElevatedButton(
+                              key: Key('getActivationCodeButton'),
                               onPressed: _submitForm,
                               style: ElevatedButton.styleFrom(
                                 minimumSize: const Size(200, 60),

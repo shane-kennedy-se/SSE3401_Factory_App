@@ -201,6 +201,7 @@ class _OTPVerificationPageState extends State<OTPVerificationPage> {
                   height: 20,
                 ),
                 ElevatedButton(
+                  key: const Key("activateButton"),
                   onPressed: () {
                     if (_formKey.currentState?.validate() ?? false) {
                       _formKey.currentState?.save();
